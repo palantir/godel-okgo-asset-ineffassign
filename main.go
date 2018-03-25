@@ -22,7 +22,8 @@ import (
 	"github.com/palantir/pkg/cobracli"
 
 	"github.com/palantir/godel-okgo-asset-ineffassign/generated_src"
-	"github.com/palantir/godel-okgo-asset-ineffassign/ineffassign"
+	"github.com/palantir/godel-okgo-asset-ineffassign/ineffassign/config"
+	"github.com/palantir/godel-okgo-asset-ineffassign/ineffassign/creator"
 )
 
 func main() {
@@ -32,6 +33,6 @@ func main() {
 func checkMain(osArgs []string) int {
 	os.Args = osArgs
 	var debugFlagVal bool
-	rootCmd := checker.AssetRootCmd(ineffassign.Creator(), "run ineffassign check")
+	rootCmd := checker.AssetRootCmd(creator.Ineffassign(), config.UpgradeConfig, "run ineffassign check")
 	return cobracli.ExecuteWithDefaultParamsWithVersion(rootCmd, &debugFlagVal, "")
 }
