@@ -32,7 +32,6 @@ func main() {
 
 func checkMain(osArgs []string) int {
 	os.Args = osArgs
-	var debugFlagVal bool
 	rootCmd := checker.AssetRootCmd(creator.Ineffassign(), config.UpgradeConfig, "run ineffassign check")
-	return cobracli.ExecuteWithDefaultParamsWithVersion(rootCmd, &debugFlagVal, "")
+	return cobracli.ExecuteWithDefaultParams(rootCmd)
 }
