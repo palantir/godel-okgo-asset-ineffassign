@@ -16,7 +16,7 @@
     "bzip2/internal/sais",
     "internal",
     "internal/errors",
-    "internal/prefix",
+    "internal/prefix"
   ]
   revision = "cc9eb1d7ad760af14e8f918698f745e80377af4f"
 
@@ -68,7 +68,7 @@
   packages = [
     "dirs",
     "errorstringer",
-    "gofiles",
+    "gofiles"
   ]
   revision = "b64318170fdef93b4462420e0badef8050dbb7ec"
 
@@ -111,32 +111,17 @@
     "framework/verifyorder",
     "godelgetter",
     "pkg/osarch",
-    "pkg/products/v2/products",
-    "pkg/versionedconfig",
+    "pkg/products",
+    "pkg/versionedconfig"
   ]
   revision = "6ef6fc2811e260af0641aae25a45881217b3cf3d"
-
-[[projects]]
-  name = "github.com/palantir/godel-okgo-asset-ineffassign"
-  packages = [
-    "generated_src",
-    "generated_src/internal/github.com/gordonklaus/ineffassign",
-    "generated_src/internal/github.com/gordonklaus/ineffassign/amalgomated_flag",
-    "ineffassign",
-    "ineffassign/config",
-    "ineffassign/config/internal/legacy",
-    "ineffassign/config/internal/v0",
-    "ineffassign/creator",
-  ]
-  revision = "a26d9a8c8201bb43fb17aef9b065b6e5db96ca82"
-  version = "v1.0.0"
 
 [[projects]]
   name = "github.com/palantir/okgo"
   packages = [
     "checker",
     "okgo",
-    "okgotester",
+    "okgotester"
   ]
   revision = "32725b197ce491268c43f7036aa702bb99dac21c"
   version = "v1.0.0"
@@ -148,7 +133,7 @@
     "cobracli",
     "matcher",
     "pkgpath",
-    "specdir",
+    "specdir"
   ]
   revision = "23395ebeee5df1083443a6261e5f674a76af91b6"
 
@@ -180,7 +165,7 @@
   name = "github.com/stretchr/testify"
   packages = [
     "assert",
-    "require",
+    "require"
   ]
   revision = "12b6f73e6084dad08a7c6e575284b177ecafbc71"
   version = "v1.2.1"
@@ -197,7 +182,7 @@
     ".",
     "internal/hash",
     "internal/xlog",
-    "lzma",
+    "lzma"
   ]
   revision = "0c6b41e72360850ca4f98dc341fd999726ea007f"
   version = "v0.5.4"
@@ -223,6 +208,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f2307f0c26662ab635884588db1ce2bc5353bbb0fc461100e46c9fdbe6f6c081"
+  inputs-digest = "4d5f51fb2d086e9eb3ffb983f6070a4272afae857373706e0190ba3235d9c8f9"
   solver-name = "gps-cdcl"
   solver-version = 1
