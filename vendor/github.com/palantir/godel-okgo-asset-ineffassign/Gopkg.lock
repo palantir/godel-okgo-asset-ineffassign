@@ -117,21 +117,6 @@
   revision = "6ef6fc2811e260af0641aae25a45881217b3cf3d"
 
 [[projects]]
-  name = "github.com/palantir/godel-okgo-asset-ineffassign"
-  packages = [
-    "generated_src",
-    "generated_src/internal/github.com/gordonklaus/ineffassign",
-    "generated_src/internal/github.com/gordonklaus/ineffassign/amalgomated_flag",
-    "ineffassign",
-    "ineffassign/config",
-    "ineffassign/config/internal/legacy",
-    "ineffassign/config/internal/v0",
-    "ineffassign/creator",
-  ]
-  revision = "11fa22d416e61f0303d4af00161e7f6795869855"
-  version = "v1.1.0"
-
-[[projects]]
   name = "github.com/palantir/okgo"
   packages = [
     "checker",
@@ -223,6 +208,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f2307f0c26662ab635884588db1ce2bc5353bbb0fc461100e46c9fdbe6f6c081"
+  inputs-digest = "276cd33ab842a7050f2ac56ae48b06221990e1dc105c1121e098f7cc67eb798a"
   solver-name = "gps-cdcl"
   solver-version = 1
