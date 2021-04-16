@@ -12,9 +12,9 @@ import (
 
 // Analyzer is the ineffassign analysis.Analyzer instance.
 var Analyzer = &analysis.Analyzer{
-	Name:	"ineffassign",
-	Doc:	"detect ineffectual assignments in Go code",
-	Run:	checkPath,
+	Name: "ineffassign",
+	Doc:  "detect ineffectual assignments in Go code",
+	Run:  checkPath,
 }
 
 func checkPath(pass *analysis.Pass) (interface{}, error) {
@@ -34,8 +34,8 @@ func checkPath(pass *analysis.Pass) (interface{}, error) {
 
 		for _, id := range chk.ineff {
 			pass.Report(analysis.Diagnostic{
-				Pos:		id.Pos(),
-				Message:	fmt.Sprintf("ineffectual assignment to %s", id.Name),
+				Pos:     id.Pos(),
+				Message: fmt.Sprintf("ineffectual assignment to %s", id.Name),
 			})
 		}
 	}
@@ -56,19 +56,19 @@ func isGenerated(file *ast.File) bool {
 }
 
 type builder struct {
-	roots		[]*block
-	block		*block
-	vars		map[*ast.Object]*variable
-	results		[]*ast.FieldList
-	breaks		branchStack
-	continues	branchStack
-	gotos		branchStack
-	labelStmt	*ast.LabeledStmt
+	roots     []*block
+	block     *block
+	vars      map[*ast.Object]*variable
+	results   []*ast.FieldList
+	breaks    branchStack
+	continues branchStack
+	gotos     branchStack
+	labelStmt *ast.LabeledStmt
 }
 
 type block struct {
-	children	[]*block
-	ops		map[*ast.Object][]operation
+	children []*block
+	ops      map[*ast.Object][]operation
 }
 
 func (b *block) addChild(c *block) {
@@ -76,13 +76,13 @@ func (b *block) addChild(c *block) {
 }
 
 type operation struct {
-	id	*ast.Ident
-	assign	bool
+	id     *ast.Ident
+	assign bool
 }
 
 type variable struct {
-	fundept	int
-	escapes	bool
+	fundept int
+	escapes bool
 }
 
 func (bld *builder) walk(n ast.Node) {
@@ -474,9 +474,9 @@ func (bld *builder) newOp(id *ast.Ident, assign bool) {
 type branchStack []*branch
 
 type branch struct {
-	label	*ast.Object
-	srcs	[]*block
-	dst	*block
+	label *ast.Object
+	srcs  []*block
+	dst   *block
 }
 
 func (s *branchStack) push(lbl *ast.Object) *branch {
@@ -527,9 +527,9 @@ func ident(x ast.Expr) (*ast.Ident, bool) {
 }
 
 type checker struct {
-	vars	map[*ast.Object]*variable
-	seen	map[*block]bool
-	ineff	idents
+	vars  map[*ast.Object]*variable
+	seen  map[*block]bool
+	ineff idents
 }
 
 func (chk *checker) check(b *block) {
@@ -586,6 +586,6 @@ func used(obj *ast.Object, b *block, seen map[*block]bool) bool {
 
 type idents []*ast.Ident
 
-func (ids idents) Len() int		{ return len(ids) }
-func (ids idents) Less(i, j int) bool	{ return ids[i].Pos() < ids[j].Pos() }
-func (ids idents) Swap(i, j int)	{ ids[i], ids[j] = ids[j], ids[i] }
+func (ids idents) Len() int           { return len(ids) }
+func (ids idents) Less(i, j int) bool { return ids[i].Pos() < ids[j].Pos() }
+func (ids idents) Swap(i, j int)      { ids[i], ids[j] = ids[j], ids[i] }
