@@ -59,6 +59,10 @@ func TestCheck(t *testing.T) {
 				Name: "ineffectual assignment",
 				Specs: []gofiles.GoFileSpec{
 					{
+						RelPath: "go.mod",
+						Src:     `module testmodule`,
+					},
+					{
 						RelPath: "foo.go",
 						Src: `package foo
 
@@ -82,6 +86,10 @@ Check(s) produced output: [ineffassign]
 			{
 				Name: "ineffectual assignment from inner directory",
 				Specs: []gofiles.GoFileSpec{
+					{
+						RelPath: "go.mod",
+						Src:     `module testmodule`,
+					},
 					{
 						RelPath: "foo.go",
 						Src: `package foo

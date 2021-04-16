@@ -29,7 +29,6 @@ func Ineffassign() checker.Creator {
 			return checker.NewAmalgomatedChecker(
 				ineffassign.TypeName,
 				checker.ParamPriority(ineffassign.Priority),
-				checker.ParamArgs("-n"),
 			), nil
 		},
 	)
