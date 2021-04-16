@@ -1,0 +1,5 @@
+type: improvement
+improvement:
+  description: Updates github.com/gordonklaus/ineffassign dependency to v0.0.0-20210225214923-2e10b2664254
+  links:
+  - https://github.com/palantir/godel-okgo-asset-ineffassign/pull/70
