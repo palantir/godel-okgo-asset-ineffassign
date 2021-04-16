@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	ineffassign "github.com/palantir/godel-okgo-asset-ineffassign/generated_src/internal/github.com/gordonklaus/ineffassign"
+	ineffassign "."
 )
 
 var programs = map[string]func(){"ineffassign": func() {
