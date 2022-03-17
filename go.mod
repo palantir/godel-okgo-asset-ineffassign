@@ -1,6 +1,6 @@
 module github.com/palantir/godel-okgo-asset-ineffassign
 
-go 1.17
+go 1.18
 
 require (
 	github.com/gordonklaus/ineffassign v0.0.0-20210225214923-2e10b2664254
