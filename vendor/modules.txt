@@ -35,7 +35,7 @@ github.com/google/go-github/github
 # github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135
 ## explicit
 github.com/google/go-querystring/query
-# github.com/gordonklaus/ineffassign v0.0.0-20210225214923-2e10b2664254
+# github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8
 ## explicit; go 1.14
 github.com/gordonklaus/ineffassign
 github.com/gordonklaus/ineffassign/pkg/ineffassign
@@ -207,17 +207,11 @@ golang.org/x/sys/unix
 # golang.org/x/tools v0.1.10
 ## explicit; go 1.17
 golang.org/x/tools/go/analysis
-golang.org/x/tools/go/analysis/internal/analysisflags
-golang.org/x/tools/go/analysis/internal/checker
-golang.org/x/tools/go/analysis/internal/facts
-golang.org/x/tools/go/analysis/singlechecker
-golang.org/x/tools/go/analysis/unitchecker
 golang.org/x/tools/go/ast/astutil
 golang.org/x/tools/go/gcexportdata
 golang.org/x/tools/go/internal/gcimporter
 golang.org/x/tools/go/internal/packagesdriver
 golang.org/x/tools/go/packages
-golang.org/x/tools/go/types/objectpath
 golang.org/x/tools/internal/analysisinternal
 golang.org/x/tools/internal/event
 golang.org/x/tools/internal/event/core
@@ -226,7 +220,6 @@ golang.org/x/tools/internal/event/label
 golang.org/x/tools/internal/gocommand
 golang.org/x/tools/internal/lsp/fuzzy
 golang.org/x/tools/internal/packagesinternal
-golang.org/x/tools/internal/span
 golang.org/x/tools/internal/typeparams
 golang.org/x/tools/internal/typesinternal
 # golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1

@@ -1,0 +1,6 @@
+type: fix
+fix:
+  description: Updates `github.com/gordonklaus/ineffassign` module dependency to version
+    that does not output errors when an input file does not compile.
+  links:
+  - https://github.com/palantir/godel-okgo-asset-ineffassign/pull/142
