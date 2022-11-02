@@ -6,7 +6,7 @@ require (
 	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8
 	github.com/nmiyake/pkg/gofiles v1.2.0
 	github.com/palantir/amalgomate v1.5.0
-	github.com/palantir/godel/v2 v2.69.0
+	github.com/palantir/godel/v2 v2.70.0
 	github.com/palantir/okgo v1.8.0
 	github.com/palantir/pkg/cobracli v1.2.0
 	github.com/pkg/errors v0.8.1
