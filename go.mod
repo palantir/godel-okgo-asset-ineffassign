@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8
 	github.com/nmiyake/pkg/gofiles v1.2.0
-	github.com/palantir/amalgomate v1.40.0
+	github.com/palantir/amalgomate v1.41.0
 	github.com/palantir/godel/v2 v2.109.0
 	github.com/palantir/okgo v1.55.0
 	github.com/palantir/pkg/cobracli v1.2.0
