@@ -3,7 +3,7 @@ module github.com/palantir/godel-okgo-asset-ineffassign
 go 1.25.0
 
 require (
-	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8
+	github.com/gordonklaus/ineffassign v0.2.0
 	github.com/nmiyake/pkg/gofiles v1.2.0
 	github.com/palantir/amalgomate v1.52.0
 	github.com/palantir/godel/v2 v2.137.0
