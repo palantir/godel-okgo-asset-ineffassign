@@ -8,7 +8,6 @@ plugins:
           darwin-amd64: 1455377d39eb96838c54dc5c2916eb9a50bc5fd0631c70d85cc1f597b4b8cfe4
           darwin-arm64: eaa9de0ac7a7458e1e90a4c749d8855f2489fbc065743ddd18382db2f19c7aa9
           linux-amd64: 9658a2e6b30aa44dc525a394e219d0bb0ebe7808778de3b2959a71421f2b42a9
-          linux-arm64: 382ad19b4fa92dc9c6a123f480818b53131bd438a3e1207faab07dacc779c017
     - locator:
         id: com.palantir.godel-mod-plugin:mod-plugin:1.54.0
         checksums:
